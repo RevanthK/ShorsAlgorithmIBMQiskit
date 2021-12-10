@@ -1,5 +1,7 @@
 # Shor's Quantum Integer Factorization Algorithm on IBM Qiskit
 
+Many modern encryption algorithms (including RSA) rely on the assumption that factoring large integers is computationally intractable. This is true to classical computers, but the  Shor's algorithm shows that factoring integers is efficient on a quantum computer, so it may be feasible to defeat RSA by constructing a large quantum computer. I have implemented a Shor's algorithm using [IBM's Qiskit](https://qiskit.org/) and have ran experiments on small quantum computers.
+
 ## Introduction: Integer Factorization
 Integer Factorization consists of decomposing of a composite number into a product of
 smaller integers. Those integers may be further decomposed and so on. Decomposing an integer
@@ -18,6 +20,8 @@ computation. However, the predominant optimization of Shor's algorithm is due to
 of the quantum Fourier transform, and modular exponentiation by repeated squarings. This
 result in sub-exponential runtime for the algorithm makes it exponentially faster than the most
 efficient known classical factoring algorithm.
+
+...
 
 To see my full experiment please see here: https://github.com/RevanthK/ShorsAlgorithmIBMQiskit/blob/master/Final_Report.pdf 
 
